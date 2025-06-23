@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Golf Lesson</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="bg-light">
+
+<section id="booking" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success">Book Your Golf Lesson</h2>
+    <form id="bookingForm" action="#" method="POST" class="bg-white p-4 rounded shadow-sm">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="col-md-6">
+          <label for="datetime" class="form-label">Preferred Date & Time</label>
+          <input type="text" class="form-control" id="datetime" name="datetime" required>
+        </div>
+        <div class="col-md-12">
+          <label for="plan" class="form-label">Choose Your Plan</label>
+          <select class="form-select" id="plan" name="plan" required>
+            <option value="">Select a plan</option>
+            <option value="basic">Basic - $19</option>
+            <option value="business">Business - $29</option>
+            <option value="enterprise">Enterprise - $49</option>
+          </select>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+<button type="button" class="btn btn-success btn-lg" onclick="window.location.href='https://buy.stripe.com/test_14A14p63bgYX1Lw9KS5kk00'">
+  Proceed to Payment
+</button>
+
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#datetime", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    minDate: "today"
+  });
+</script>
+
+</body>
+</html>

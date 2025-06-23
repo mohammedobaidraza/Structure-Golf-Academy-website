@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Structure Golf Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+ 
+<nav class="navbar navbar-expand-lg bg-white shadow-sm px-4 py-2 sticky-top">
+  <div class="container-fluid">
+    <!-- Logo
+    <a class="navbar-brand" href="#about">
+      <img src="assets/logo.jpg" alt="Structure Golf Academy" height="40">
+    </a> -->
+ <!-- Title, shifted right and styled -->
+ <a href="index.html" class="d-flex align-items-center text-decoration-none">
+  <img src="assets\logo-removebg-preview.png" alt="Logo" height="40" class="me-2">
+  <span class="fw-bold text-uppercase" 
+        style="color: #00391c; letter-spacing: 1px; font-size: 1.2rem;">
+   STRUCTURE  GOLF  ACADEMY
+  </span>
+</a>
+
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item mx-2"><a class="nav-link" href="#features">Coaching Packages</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#booking">Book Now</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#gallery">Gallery View</a></li>
+<li class="nav-item mx-2">
+  <a class="nav-link" href="#testimonials">Testimonials</a>
+</li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-3">
+         <a href="booking.html" class="btn btn-dark">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form action="https://formsubmit.co/your@email.com" method="POST"> <!-- Change to your email -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up for Coaching</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phone" />
+          </div>
+          <div class="mb-3">
+            <label for="package" class="form-label">Preferred Package</label>
+            <select name="package" class="form-select">
+              <option>Basic</option>
+              <option>Business</option>
+              <option>Enterprise</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success w-100">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center text-white">
+  <div class="container text-start">
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+
+    <h1 class="display-5 fw-bold">Elevate Your Game at<br>Golf Structure Academy</h1>
+    <p class="mt-3 w-75">
+      Join us at Golf Structure Academy to refine your skills and take your golf game to the next level. Our expert coaches are ready to guide you every step of the way.
+    </p>
+    <div class="mt-4">
+      <a href="booking.html" class="btn btn-light me-3">Book</a>
+      <a href="#" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </div>
+  <!--<div class="hero-image-placeholder">
+    <img src="https://via.placeholder.com/200x150?text=Image" class="img-fluid" alt="Hero Placeholder">
+  </div>-->
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+<script 
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  async 
+  defer>
+</script>
+
+</body>
+</html>
+<!-- Features Section -->
+<!-- Features Section -->
+<section class="features-section py-5 text-center" id="features">
+  <div class="container">
+    <h2 class="mb-5 fw-bold">Experience Expert Coaching and Elevate<br>Your Golf Game with Us</h2>
+    <div class="row g-4">
+
+      <!-- Feature 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/image1.jpg" class="card-img-top" alt="Feature 1">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">State-of-the-Art Facilities<br>Designed for Optimal Learning and Practice</h5>
+            <p class="card-text text-muted small">Our academy offers a range of professional coaching tailored to all skill levels.</p>
+            <a href="#" class="text-primary small text-decoration-none">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/image2.jpg" class="card-img-top" alt="Feature 2">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Flexible Scheduling Options to Fit<br>Your Busy Lifestyle</h5>
+            <p class="card-text text-muted small">Book your lessons at your convenience with our easy-to-use calendar system.</p>
+            <a href="#" class="text-primary small text-decoration-none">Sign Up →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/image3.png" class="card-img-top" alt="Feature 3">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Join Our Community of Passionate Golfers and Improve Together</h5>
+            <p class="card-text text-muted small">Connect with fellow golf enthusiasts and share your journey towards mastery.</p>
+            <a href="#" class="text-primary small text-decoration-none">Join →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <!-- image gallery -->
+<section id="gallery" class="gallery-section py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Image Gallery</h2>
+    <div id="golfCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner rounded shadow">
+
+        <div class="carousel-item active">
+          <img src="assets/image1.jpg" class="d-block w-100" alt="Golf Drill">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/image2.jpg" class="d-block w-100" alt="Swing Technique">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/image3.png" class="d-block w-100" alt="Tiger Woods">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/image4.jpg" class="d-block w-100" alt="Swing Motion">
+        </div>
+
+      </div>
+
+      <!-- Optional Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#golfCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#golfCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Booking Process Section -->
+<!-- Booking Process Section -->
+<section class="booking-section py-5 text-center bg-dark-green" id="booking">
+
+  <div class="container">
+    <p class="text-muted fw-light mb-1"></p>
+    <h2 class="fw-bold mb-3">Simple 3-Step Booking Process</h2>
+    <p class="text-muted mb-5">
+      Booking your golf lessons has never been easier. Follow our streamlined process to get started today!
+    </p>
+
+    <div class="row text-center g-4">
+      <!-- Step 1 -->
+      <div class="col-12 col-md-4">
+        <div class="icon mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Step 1" width="40" height="40">
+        </div>
+        <h5 class="fw-semibold">Step 1: Select Your Coaching Package</h5>
+        <p class="small text-muted">Choose from a variety of tailored coaching options.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-12 col-md-4">
+        <div class="icon mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Step 2" width="40" height="40">
+        </div>
+        <h5 class="fw-semibold">Step 2: Pick a Date and Time</h5>
+        <p class="small text-muted">Use our Calendly integration to find a slot that works for you.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-12 col-md-4">
+        <div class="icon mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Step 3" width="40" height="40">
+        </div>
+        <h5 class="fw-semibold">Step 3: Complete Your Booking</h5>
+        <p class="small text-muted">Finalize your reservation securely through our Stripe payment system.</p>
+      </div>
+    </div>
+
+    <!-- Call-to-Action Buttons -->
+    <div class="mt-4">
+      <a href="booking.html" class="btn btn-outline-dark me-2">Learn More</a>
+      <a href="booking.html" class="btn btn-dark">Sign Up</a>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Courses Section -->
+<!-- Courses Section -->
+<section class="courses-section py-5 text-center" id="courses">
+  <div class="container">
+    <h2 class="fw-bold mb-2">Explore Our Courses</h2>
+    <p class="text-muted mb-5">Discover the perfect course for you.</p>
+
+    <div class="row g-4 text-start">
+      <!-- Course 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card border-0 h-100">
+          <img src="assets/image1.jpg" class="card-img-top img-fluid" alt="Beginner Golf Lessons">
+          <div class="card-body px-0">
+            <p class="small text-muted">Golf</p>
+            <h5 class="fw-semibold">Beginner Golf Lessons</h5>
+            <p class="small text-muted">Learn the fundamentals of golf in a supportive environment.</p>
+            <div class="d-flex align-items-center small text-muted mt-3">
+              <img src="https://via.placeholder.com/30" class="rounded-circle me-2" alt="John">
+              John Doe &nbsp;•&nbsp; 01 Feb 2023 &nbsp;•&nbsp; 10 min read
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card border-0 h-100">
+          <img src="assets/image2.jpg" class="card-img-top img-fluid" alt="Advanced Swing Techniques">
+          <div class="card-body px-0">
+            <p class="small text-muted">Golf</p>
+            <h5 class="fw-semibold">Advanced Swing Techniques</h5>
+            <p class="small text-muted">Refine your swing with expert coaching and personalized feedback.</p>
+            <div class="d-flex align-items-center small text-muted mt-3">
+              <img src="https://via.placeholder.com/30" class="rounded-circle me-2" alt="Jane">
+              Jane Smith &nbsp;•&nbsp; 15 Mar 2023 &nbsp;•&nbsp; 8 min read
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card border-0 h-100">
+          <img src="assets/image3.png" class="card-img-top img-fluid" alt="Short Game Mastery">
+          <div class="card-body px-0">
+            <p class="small text-muted">Golf</p>
+            <h5 class="fw-semibold">Short Game Mastery</h5>
+            <p class="small text-muted">Master your putting and chipping skills with tailored instruction.</p>
+            <div class="d-flex align-items-center small text-muted mt-3">
+              <img src="https://via.placeholder.com/30" class="rounded-circle me-2" alt="Emily">
+              Emily Johnson &nbsp;•&nbsp; 20 Apr 2023 &nbsp;•&nbsp; 12 min read
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <a href="#" class="btn btn-outline-dark">View all</a>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section py-5 text-center">
+  <div class="container">
+    <p class="text-muted fw-light mb-1">Affordable</p>
+    <h2 class="fw-bold mb-2">Pricing Plans</h2>
+    <p class="text-muted mb-5">Choose the best plan that suits your needs.</p>
+
+    <div class="row g-4">
+      <!-- Basic Plan -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border border-dark shadow-sm">
+          <div class="card-body">
+            <h5 class="fw-semibold">Basic Plan</h5>
+            <h3 class="fw-bold mt-3">$19<span class="fs-6 fw-normal">/mo</span></h3>
+            <p class="text-muted small">or $199 yearly</p>
+            <ul class="list-unstyled text-start mt-4 mb-4 px-3 small">
+              <li>✔ Access to online resources</li>
+              <li>✔ Monthly coaching sessions</li>
+              <li>✔ Personalized feedback included</li>
+            </ul>
+            <a href="https://buy.stripe.com/test_14A14p63bgYX1Lw9KS5kk00" class="btn btn-dark">Sign Up</a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border border-dark shadow-sm">
+          <div class="card-body">
+            <h5 class="fw-semibold">Business Plan</h5>
+            <h3 class="fw-bold mt-3">$29<span class="fs-6 fw-normal">/mo</span></h3>
+            <p class="text-muted small">or $299 yearly</p>
+            <ul class="list-unstyled text-start mt-4 mb-4 px-3 small">
+              <li>✔ Advanced analytics tools</li>
+              <li>✔ Group coaching sessions</li>
+              <li>✔ Priority support access</li>
+              <li>✔ Exclusive member discounts</li>
+            </ul>
+            <a href="https://buy.stripe.com/test_14A14p63bgYX1Lw9KS5kk00" class="btn btn-dark">Sign Up</a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border border-dark shadow-sm">
+          <div class="card-body">
+            <h5 class="fw-semibold">Enterprise Plan</h5>
+            <h3 class="fw-bold mt-3">$49<span class="fs-6 fw-normal">/mo</span></h3>
+            <p class="text-muted small">or $499 yearly</p>
+            <ul class="list-unstyled text-start mt-4 mb-4 px-3 small">
+              <li>✔ Unlimited coaching sessions</li>
+              <li>✔ Custom training programs</li>
+              <li>✔ Dedicated account manager</li>
+              <li>✔ Comprehensive performance tracking</li>
+              <li>✔ Tailored workshops available</li>
+            </ul>
+           <a href="https://buy.stripe.com/test_14A14p63bgYX1Lw9KS5kk00" class="btn btn-dark">Sign Up</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Schedule Section -->
+<section class="schedule-section py-5 text-center bg-dark-green" id="schedule">
+  <div class="container">
+    <p class="text-muted fw-light mb-1">Plan</p>
+    <h2 class="fw-bold mb-2">Schedule</h2>
+    <p class="text-muted mb-4">Join us for our upcoming events and enhance your golf skills with expert coaching.</p>
+
+    <!-- Date Selector -->
+<!-- Date Selector -->
+  <div class="btn-group mb-5" role="group" id="date-buttons">
+   <button type="button" class="btn btn-outline-dark active" data-day="fri">Fri 09 Feb</button>
+   <button type="button" class="btn btn-outline-dark" data-day="sat">Sat 10 Feb</button>
+   <button type="button" class="btn btn-outline-dark" data-day="sun">Sun 11 Feb</button>
+ </div>
+
+    <!-- Events List -->
+    <div class="text-start">
+      <!-- Event Row 1 -->
+      <div class="d-flex justify-content-between align-items-center border-top pt-3 pb-2">
+        <div style="width: 80px;">8:00 am</div>
+        <div class="flex-grow-1">
+          <strong>Morning Golf Clinic</strong>
+          <span class="badge bg-light text-dark border mx-2">In-person</span>
+          <span class="badge bg-light text-dark border">Online</span>
+        </div>
+        <div style="width: 100px;">John</div>
+        <div style="width: 100px;">Chicago</div>
+        <button class="btn btn-outline-dark btn-sm">View details</button>
+      </div>
+
+      <!-- Event Row 2 -->
+      <div class="d-flex justify-content-between align-items-center border-top pt-3 pb-2">
+        <div style="width: 80px;">9:00 am</div>
+        <div class="flex-grow-1">
+          <strong>Afternoon Skills Workshop</strong>
+          <span class="badge bg-light text-dark border">Online</span>
+        </div>
+        <div style="width: 100px;">Emily</div>
+        <div style="width: 100px;">Virtual</div>
+        <button class="btn btn-outline-dark btn-sm">View details</button>
+      </div>
+
+      <!-- Event Row 3 -->
+      <div class="d-flex justify-content-between align-items-center border-top pt-3 pb-2">
+        <div style="width: 80px;">10:00 am</div>
+        <div class="flex-grow-1">
+          <strong>Evening Strategy Session</strong>
+          <span class="badge bg-light text-dark border">Online</span>
+        </div>
+        <div style="width: 100px;">Michael</div>
+        <div style="width: 100px;">Webinar</div>
+        <button class="btn btn-outline-dark btn-sm">View details</button>
+      </div>
+
+      <div class="border-top mt-2"></div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-2">Customer testimonials</h2>
+    <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row g-4 text-start">
+      <!-- Testimonial 1 -->
+      <div class="col-12 col-md-4">
+        <div class="p-3 border rounded h-100">
+          <p class="mb-2">★★★★★</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://via.placeholder.com/40" class="rounded-circle me-3" alt="Avatar">
+            <div>
+              <strong class="d-block">John Doe</strong>
+              <small class="text-muted">Amateur Golfer</small><br>
+              <img src="https://uploads-ssl.webflow.com/63c90b2fccc70825f7ab54cb/63c90c575845d6b9f31b5f52_Webflow%20Logo.svg" width="60">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-12 col-md-4">
+        <div class="p-3 border rounded h-100">
+          <p class="mb-2">★★★★★</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://via.placeholder.com/40" class="rounded-circle me-3" alt="Avatar">
+            <div>
+              <strong class="d-block">Name Surname</strong>
+              <small class="text-muted">Position, Company name</small><br>
+              <img src="https://uploads-ssl.webflow.com/63c90b2fccc70825f7ab54cb/63c90c575845d6b9f31b5f52_Webflow%20Logo.svg" width="60">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-12 col-md-4">
+        <div class="p-3 border rounded h-100">
+          <p class="mb-2">★★★★★</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://via.placeholder.com/40" class="rounded-circle me-3" alt="Avatar">
+            <div>
+              <strong class="d-block">Name Surname</strong>
+              <small class="text-muted">Position, Company name</small><br>
+              <img src="https://uploads-ssl.webflow.com/63c90b2fccc70825f7ab54cb/63c90c575845d6b9f31b5f52_Webflow%20Logo.svg" width="60">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="contact-section py-5">
+  <div class="container">
+    <p class="text-muted fw-light mb-1">Location</p>
+    <h2 class="fw-bold mb-2">Contact Us</h2>
+    <p class="text-muted mb-4">Reach out to us for inquiries and bookings.</p>
+
+    <div class="row align-items-center g-4">
+      <!-- Contact Info -->
+      <div class="col-12 col-lg-5">
+        <div class="pe-lg-4">
+          <p><strong>Email</strong><br>
+            <a href="mailto:hello@golfstructureacademy.com">hello@golfstructureacademy.com</a>
+          </p>
+          <p><strong>Phone</strong><br>
+            <a href="tel:+11235551234">+1 (123) 555-1234</a>
+          </p>
+          <p><strong>Office</strong><br>
+            456 Golf Ave, Chicago IL 60614<br>
+            <a href="#">Get Directions →</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-12 col-lg-7">
+        <div class="rounded border overflow-hidden shadow-sm w-100" style="height: 300px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5930.08145554277!2d-87.6841858589429!3d41.99940147134846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd1c140cec421%3A0x1dbddc6355b4139a!2s2035%20W%20Arthur%20Ave%2C%20Chicago%2C%20IL%2060645!5e0!3m2!1sen!2sus!4v1748335991509!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section py-4 border-top footer-dark-green">
+
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    
+    <!-- Logo -->
+    <img src="assets\logo-removebg-preview.png" class="img-fluid" alt="Logo" style="max-height: 50px;">
+
+
+    <!-- Nav Links -->
+       <!--<ul class="list-inline mb-3 mb-md-0">
+      <li class="list-inline-item mx-2"><a href="#" class="text-decoration-none text-dark">Coaching Packages</a></li>
+      <li class="list-inline-item mx-2"><a href="#" class="text-decoration-none text-dark">Book Now</a></li>
+      <li class="list-inline-item mx-2"><a href="#" class="text-decoration-none text-dark">Contact Us</a></li>
+      <li class="list-inline-item mx-2"><a href="#" class="text-decoration-none text-dark">Gallery View</a></li>
+      <li class="list-inline-item mx-2"><a href="#" class="text-decoration-none text-dark">Testimonials</a></li>
+    </ul>-->
+
+    <!-- Social Icons -->
+    <div>
+      <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-dark me-2"><i class="bi bi-x"></i></a>
+      <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+
+   <!--<div class="text-center mt-3 small text-muted">
+    © 2025 Golf Structure Academy. All rights reserved. &nbsp;|&nbsp;
+    <a href="#" class="text-muted text-decoration-none">Privacy Policy</a> &nbsp;|&nbsp;
+    <a href="#" class="text-muted text-decoration-none">Terms of Use</a> &nbsp;|&nbsp;
+    <a href="#" class="text-muted text-decoration-none">Cookie Policy</a>
+  </div>
+</footer>-->

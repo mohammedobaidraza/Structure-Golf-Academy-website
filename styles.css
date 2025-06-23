@@ -1,0 +1,310 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* Adjust based on your sticky navbar height */
+}
+
+.hero-section {
+  background: url('assets/background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 80px 40px;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.hero-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+}
+
+.btn-light,
+.btn-dark,
+.btn-primary {
+  background-color: #004d26;
+  border-color: #004d26;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-light:hover,
+.btn-dark:hover,
+.btn-primary:hover {
+  background-color: #00391c;
+  border-color: #00391c;
+  color: #fff;
+}
+
+.btn-outline-dark {
+  border-color: #004d26;
+  color: #004d26;
+}
+
+.btn-outline-dark:hover {
+  background-color: #004d26;
+  color: #fff;
+}
+
+a {
+  color: #004d26;
+}
+
+a:hover {
+  color: #00391c;
+}
+
+.navbar-brand {
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+.features-section {
+  background-color: #fff;
+}
+
+.features-section .card-title {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.features-section .card-text {
+  margin-top: 10px;
+}
+
+.features-section .card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.gallery-section img {
+  object-fit: cover;
+}
+
+.booking-section h2 {
+  font-size: 1.8rem;
+}
+
+.booking-section .icon img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.booking-section .btn-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #004d26;
+}
+
+.booking-section .btn-link:hover {
+  text-decoration: underline;
+  color: #00391c;
+}
+
+.courses-section .card-img-top {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.courses-section .card-body h5 {
+  font-size: 1.1rem;
+}
+
+.courses-section .card-body .small {
+  font-size: 0.875rem;
+}
+
+.courses-section .rounded-circle {
+  width: 30px;
+  height: 30px;
+}
+
+.pricing-section h2 {
+  font-size: 1.8rem;
+}
+
+.pricing-section ul li {
+  margin-bottom: 8px;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.pricing-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #004d26;
+  font-size: 0.9rem;
+}
+
+.schedule-section h2 {
+  font-size: 1.8rem;
+}
+
+.schedule-section .badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  background-color: #e6f0eb;
+  color: #004d26;
+  border: 1px solid #004d26;
+}
+
+.schedule-section .btn-group .btn {
+  font-size: 0.85rem;
+}
+
+.testimonials-section h2,
+.contact-section h2 {
+  font-size: 1.8rem;
+}
+
+.contact-section a {
+  text-decoration: none;
+  color: #004d26;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+  color: #00391c;
+}
+
+.footer-section {
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-section a {
+  color: #004d26;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #00391c;
+}
+.sticky-top {
+  z-index: 1030; /* ensures it stays above other elements */
+}
+
+body {
+  padding-top: 10px; /* adjust if the navbar covers top content */
+}
+.bg-dark-green {
+  background-color: #00391c;
+  color: #ffffff;
+}
+
+.bg-dark-green .text-muted {
+  color: #dcdcdc !important;
+}
+
+.bg-dark-green .btn-outline-dark {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.bg-dark-green .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #00391c;
+}
+.bg-dark-green {
+  background-color: #00391c;
+  color: #ffffff;
+}
+
+.bg-dark-green .text-muted,
+.bg-dark-green p,
+.bg-dark-green h2 {
+  color: #f0f0f0;
+}
+
+.bg-dark-green .btn-outline-dark {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.bg-dark-green .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #00391c;
+}
+
+.bg-dark-green .badge {
+  background-color: #ffffff;
+  color: #00391c;
+}
+
+.bg-dark-green .btn-outline-dark.btn-sm {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.bg-dark-green .btn-outline-dark.btn-sm:hover {
+  background-color: #ffffff;
+  color: #00391c;
+}
+.footer-dark-green {
+  background-color: #f1f1f1;
+  color: #ffffff;
+}
+
+.footer-dark-green a {
+  color: #00391c;
+  text-decoration: none;
+}
+
+.footer-dark-green a:hover {
+  text-decoration: underline;
+}
+
+.footer-dark-green .bi {
+  color: #00391c;
+}
+.booking-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.booking-container h2 {
+  margin-bottom: 1rem;
+  color: #00391c;
+}
+
+.booking-container input,
+.booking-container button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
